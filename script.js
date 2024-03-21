@@ -13,8 +13,8 @@ function closeModal() {
     document.body.classList.remove('jw-modal-open');
 }
 
-window.addEventListener('load', function() {
-    this.setTimeout(function() {
-        openModal('modal-1');
-    }, 5000);
-});
+// window.addEventListener('load', function() {
+//     this.setTimeout(function() {
+//         openModal('modal-1');
+//     }, 5000);
+// });
