@@ -46,7 +46,6 @@ button {
     background: #fff;
     width: 80%;
     height: auto;
-    max-height: 500px;
     max-width: 500px;
     position: fixed;
     top: 50%;
@@ -62,7 +61,7 @@ body.jw-modal-open {
 }
 #prefferences-jw{
     border-color: #DC2B19;
-    width: 130px;
+    width: 100px;
 }
 #accept-jw{
     padding-top: 20px;
@@ -74,6 +73,7 @@ body.jw-modal-open {
     font-size: 20px;
     border-radius: 70px;
     width: 200px;
+    margin-bottom: 8px;
 }
 
 /*Toggle switch*/
