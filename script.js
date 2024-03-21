@@ -11,10 +11,7 @@ function closeModal() {
 }
 
 window.addEventListener('load', function() {
-    // close modals on background click
-    document.addEventListener('click', event => {
-        if (event.target.classList.contains('jw-modal')) {
-            closeModal();
-        }
-    });
+    this.setTimeout(function() {
+        openModal('modal-1');
+    }, 5000);
 });
