@@ -20,30 +20,21 @@ button {
 
 /* MODAL STYLES
 -------------------------------*/
-.jw-modal {
-    /* modals are hidden by default */
+#consent-modeV2-modal .jw-modal {
     display: none;
-
-    /* modal container fixed across whole screen */
     position: fixed;
     inset: 0;
-
-    /* z-index must be higher than everything else on the page */
     z-index: 10000;
-    
-    /* semi-transparent black background exposed by padding */
     background-color: rgba(0, 0, 0, .75);
     padding: 40px;
-
-    /* enables scrolling for tall modals */
     overflow: auto;
 }
 
-.jw-modal.open {
+#consent-modeV2-modal .jw-modal.open {
     display: block;
 }
 
-.jw-modal-body {
+#consent-modeV2-modal .jw-modal-body {
     padding: 20px;
     background: #fff;
     width: 80%;
@@ -54,23 +45,24 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-
 }
 
-body.jw-modal-open {
-    /* body overflow is hidden to hide main scrollbar when modal window is open */
+#consent-modeV2-modal body.jw-modal-open {
     overflow: hidden;
 }
-#prefferences-jw{
+
+#consent-modeV2-modal #prefferences-jw{
     border-color: #DC2B19;
     border-width: 2px;
     width: 100px;
 }
-#accept-jw{
+
+#consent-modeV2-modal #accept-jw{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #48C231;
     background-color: #48C231;
     color: white;
     font-size: 20px;
@@ -145,15 +137,13 @@ body.jw-modal-open {
   }
   .grid-container {
     display: grid;
-    grid-template-columns: 80px 1fr; /* 1st column is 80px, 2nd column takes the remaining space */
+    grid-template-columns: 60px 1fr; /* 1st column is 80px, 2nd column takes the remaining space */
     grid-template-rows: repeat(4, 1fr); /* 4 rows that divide the space equally */
     gap: 10px; /* Optional: Adds some space between grid items */
-    /* Additional styling for clarity */
     padding: 10px;
-  }
+}
   
-  .grid-item {
-    /* Styling for the grid items */
+#consent-modeV2-modal .grid-item {
     background-color: lightblue;
     display: flex;
     justify-content: center;
@@ -164,3 +154,46 @@ body.jw-modal-open {
     font-size: 14px;
   }
   
+/*Switch*/
+#consent-modeV2-modal .inactiveMixin {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+#consent-modeV2-modal .beforeAnimation {
+  -moz-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  -o-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  -webkit-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+}
+
+#consent-modeV2-modal .afterAnimation {
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, 0.04), 0 4px 9px hsla(0, 0%, 0%, 0.13), 0 3px 3px hsla(0, 0%, 0%, 0.05);
+  -moz-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  -o-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  -webkit-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+}
+
+#consent-modeV2-modal .toggleWrapper {
+  margin: auto;
+  width: 55px;
+  border: 1px solid lightgray;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#consent-modeV2-modal .toggleWrapper input.mobileToggle {
+  opacity: 0;
+  position: absolute;
+}
+
+#consent-modeV2-modal .toggleWrapper input.mobileToggle + label {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
