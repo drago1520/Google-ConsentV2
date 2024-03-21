@@ -1,18 +1,14 @@
 /* GENERAL STYLES
 -------------------------------*/
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-}
 
-h6 {
+#consent-modeV2-modal h6 {
     font-weight: normal;
     margin-top: 0;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-button {
+#consent-modeV2-modal button {
     padding: 7px 10px;
     margin-right: 5px;
     border-radius: 20px;
@@ -74,7 +70,7 @@ button {
 
 /*Toggle switch*/
 /* The switch - the box around the slider */
-.switch {
+#consent-modeV2-modal .switch {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -82,14 +78,14 @@ button {
   }
   
   /* Hide default HTML checkbox */
-  .switch input {
+  #consent-modeV2-modal .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
   /* The slider */
-  .slider {
+  #consent-modeV2-modal .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -101,7 +97,7 @@ button {
     transition: .4s;
   }
   
-  .slider:before {
+  #consent-modeV2-modal .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -113,29 +109,29 @@ button {
     transition: .4s;
   }
   
-  input:checked + .slider {
+  #consent-modeV2-modal input:checked + .slider {
     background-color: #48C231;
   }
   
-  input:focus + .slider {
+  #consent-modeV2-modal input:focus + .slider {
     box-shadow: 0 0 1px #48C231;
   }
   
-  input:checked + .slider:before {
+  #consent-modeV2-modal input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
   /* Rounded sliders */
-  .slider.round {
+  #consent-modeV2-modal .slider.round {
     border-radius: 34px;
   }
   
-  .slider.round:before {
+  #consent-modeV2-modal .slider.round:before {
     border-radius: 50%;
   }
-  .grid-container {
+  #consent-modeV2-modal .grid-container {
     display: grid;
     grid-template-columns: 60px 1fr; /* 1st column is 80px, 2nd column takes the remaining space */
     grid-template-rows: repeat(4, 1fr); /* 4 rows that divide the space equally */
@@ -150,7 +146,7 @@ button {
     align-items: center;
     border: 1px solid #ccc;
   }
-  .grid-item p{
+  #consent-modeV2-modal .grid-item p{
     font-size: 14px;
   }
   
