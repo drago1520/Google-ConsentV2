@@ -1,5 +1,8 @@
 // open modal by id
 function openModal(id) {
+    if(id=="modal-2") {
+        closeModal();
+    }
     document.getElementById(id).classList.add('open');
     document.body.classList.add('jw-modal-open');
 }
