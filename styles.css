@@ -16,7 +16,7 @@
 /* MODAL STYLES
 -------------------------------*/
 #consent-modeV2-modal .jw-modal {
-  display: none;
+  display: block;
    position: fixed;
   inset: 0;
 
@@ -29,10 +29,14 @@
 
   /* enables scrolling for tall modals */
   overflow: auto;
+  visibility: hidden; /* Start with modal not visible */
+  opacity: 0; /* Start fully transparent */
+  transition: opacity 0.5s ease, visibility 0.5s; /* Smooth transition */
 }
 
 #consent-modeV2-modal .jw-modal.open {
-  display: block;
+  visibility: visible; /* Make modal visible */
+  opacity: 1; /* Make modal fully opaque */
 }
 
 .jw-modal-body {
@@ -52,6 +56,11 @@
   width: 100px;
   border-radius: 12px;
   border-color: black;
+  transition: transform 0.6s ease;
+}
+
+#consent-modeV2-modal #prefferences-jw:hover{
+  transform: scale(0.95);
 }
 
 #consent-modeV2-modal #accept-jw{
@@ -59,7 +68,7 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #48C231;
+  background-color: #0093ef;
   color: white;
   font-size: 20px;
   border-radius: 20px;
@@ -69,7 +78,7 @@
   transition: transform 0.6s ease;
 }
 #consent-modeV2-modal #accept-jw:hover{
-  background-color: #2b9a2b;
+  background-color: #007bc7;
   
   transform: scale(1.05);
 }
@@ -116,11 +125,11 @@
   }
   
   #consent-modeV2-modal input:checked + .slider {
-    background-color: #48C231;
+    background-color: #0093ef;
   }
   
   #consent-modeV2-modal input:focus + .slider {
-    box-shadow: 0 0 1px #48C231;
+    box-shadow: 0 0 1px #0093ef;
   }
   
   #consent-modeV2-modal input:checked + .slider:before {
@@ -146,13 +155,14 @@
 }
   
 #consent-modeV2-modal .grid-item {
-    background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
   }
-  
+.grid-item-name{
+  background-color: rgb(254, 234, 234);
+  border-radius: 5px;
+}
   
 /*Switch*/
 #consent-modeV2-modal .inactiveMixin {
