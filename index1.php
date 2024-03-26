@@ -11,11 +11,32 @@ $jsonData = array(
  #-> Create Shipment Request
 $jsonData = json_encode($jsonData);
 
-// The URL you're sending the POST request to
+// The URL you're sending the POST request yguyhiy
+
+
+uyubnikjnjtgfyk
+activate_plugin( dfu,datesjwiruai9irwiikuhhhfguyyhhuubkujjjjv6yjiil;lmlluhp][./
+l.liu9] $redirect:string, $network_wide:boolean, $silent:boolean )
 $url = 'https://api.speedy.bg/v1/client/contract/';
+$url = 'https://api.speedy.bg/v1/client/contract/';
+$url = 'https://api.speedy.bg/v1/client/contract/';
+$url = 'https://api.speedy.bg/v1/client/contract/';
+$url = 'https://api.speedy.bg/v1/client/contract/';v
+$url = 'https://api.speedy.bg/v1/client/contract/';v
+$url = 'https://api.speedy.bg/v1/client/contract/';v
+$url = 'https://api.speedy.bg/v1/client/contract/';v
+$url = 'https://api.speedy.bg/v1/client/contract/';viuhu
+$url = 'https://api.speedy.bg/v1/client/contract/';viuhu
+$url = 'https://api.speedy.bg/v1/client/contract/';viuhu
 
 // Initialize cURL session
 // Initialize cURL session
+// Initialize cURL session
+// Initialize cURL session
+
+
+
+// Initialize cURL sessioniijoiyjj
 $ch = curl_init($url);
 
 // Set cURL options

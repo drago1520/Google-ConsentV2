@@ -36,17 +36,24 @@
         </div>
         <div id="modal-2" class="jw-modal">
             <div class="jw-modal-body">
-                <h6>Настойки</h6>
-                    
-                     <div class="grid-container">
+                    <h6>Настойки</h6>
+                    <p >Този уебсайт използва бисквитки, за да подобри изживяването ви, докато навигирате в уебсайта. От тях бисквитките, които са категоризирани като необходими, се съхраняват във вашия браузър, тъй като те са от съществено значение за работата на основните...</p>
+                    <div class="grid-container">
                         <div class="grid-item">
                             <label class="switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox" checked disabled>
                                 <span class="slider round"></span>
                             </label>
                         </div>
                         <div class="grid-item">
-                            <p>text</p>
+                            <div class="jw-modal-flexbox-container">
+                                <div class="jw-modal-flexbox-name">
+                                    <p>Необходими</p>
+                                </div>
+                                <!-- <div class="jw-modal-flexbox-description">
+                                    <p >Тези бисквитки са необходими за функционирането на уебсайта и не могат да бъдат изключени в нашите системи. Тук спадат бисквитки за навигиране в уебсайта, запазване на попълнената информация при преминаване между различните стъпки, както и при вход или регистрация. Можете да настроите браузъра си да блокира или да Ви предупреди за тези бисквитки, но в такъв случай някои части от сайта може да не работят.</p>
+                                </div> -->
+                            </div>  
                         </div>
                         <div class="grid-item">
                             <label class="switch">
@@ -55,7 +62,14 @@
                             </label> <!--onClick="change state"-->
                         </div>
                         <div class="grid-item">
-                            <p>text</p>
+                            <div class="jw-modal-flexbox-container">
+                                <div class="jw-modal-flexbox-name">
+                                    <p>Маркетинг</p>
+                                </div>
+                                <!-- <div class="jw-modal-flexbox-description">
+                                    <p >Рекламните бисквитки се използват, за да Ви предоставяме подходящи реклами и маркетингови кампании, проследявайки Вашата интернет активност. </p>
+                                </div> -->
+                            </div>
                         </div>
                         <div class="grid-item">
                             <label class="switch">
@@ -64,7 +78,14 @@
                             </label> <!--onClick="change state"-->
                         </div>
                         <div class="grid-item">
-                            <p>text</p>
+                            <div class="jw-modal-flexbox-container">
+                                <div class="jw-modal-flexbox-name">
+                                    <p>Аналитични</p>
+                                </div>
+                                <!-- <div class="jw-modal-flexbox-description">
+                                    <p >Тези бисквитки се използват, за да разберем как си взаимодействате с нашия уебсайт. Те ни помагат да съберем информация за показатели като брой посетители, степен на отпадане, източник на трафик и др.  </p>
+                                </div> -->
+                            </div>
                         </div>
                         <div class="grid-item">
                             <label class="switch">
@@ -73,12 +94,34 @@
                             </label> <!--onClick="change state"-->
                         </div>
                         <div class="grid-item">
-                            <p>text</p>
+                            <div class="jw-modal-flexbox-container">
+                                <div class="jw-modal-flexbox-name">
+                                    <p>Функционални</p>
+                                </div>
+                                <!-- <div class="jw-modal-flexbox-description">
+                                    <p >Тази категория бисквитки служи за улесняване на потребителя при използване на уебсайта и съобразяване с индивидуални предпочитания на потребителя. Бисквитките за функционалност включват бисквитки за разпознаване на устройство, запазване на предпочитания относно размер на шрифта и други.</p>
+                                </div> -->
+                            </div>  
                         </div>
-                      </div>
-                    <button onclick="closeModal()" id="accept-jw">Приемам всички</button>
-                    <button onclick="closeModal()" id="prefferences-jw">Запази</button>
-                    
+                        <div class="grid-item">
+                            <label class="switch">
+                                <input type="checkbox"  checked>
+                                <span class="slider round"></span>
+                            </label> <!--onClick="change state"-->
+                        </div>
+                        <div class="grid-item">
+                            <div class="jw-modal-flexbox-container">
+                                <div class="jw-modal-flexbox-name">
+                                    <p>Други</p>
+                                </div>
+                                <!-- <div class="jw-modal-flexbox-description">
+                                    <p >Други некатегоризирани бисквитки са тези, които се анализират и все още не са класифицирани в някоя от посочените категории.</p>
+                                </div> -->
+                            </div>  
+                        </div>
+                    </div>
+                <button onclick="closeModal()" id="accept-jw">Приемам всички</button>
+                <button onclick="closeModal()" id="prefferences-jw">Запази</button>  
             </div>
          </div>
                 
